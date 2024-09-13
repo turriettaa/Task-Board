@@ -1,12 +1,16 @@
-.task-item {
-    cursor: move;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
-.task-item.near-deadline {
-    background-color: yellow;
+.swim-lanes {
+  min-height: 60vh;
 }
 
-.task-item.overdue {
-    background-color: red;
-    color: white;
+.task-card {
+  margin: 0 auto;
+}
+
+.task-card:hover {
+  cursor: grab;
 }

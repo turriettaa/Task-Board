@@ -1,0 +1,12 @@
+.task-item {
+    cursor: move;
+}
+
+.task-item.near-deadline {
+    background-color: yellow;
+}
+
+.task-item.overdue {
+    background-color: red;
+    color: white;
+}

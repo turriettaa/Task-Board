@@ -63,6 +63,10 @@ Alternatively, visit the live site at [turriettaa.github.io/Task-Board/](https:/
 
 Contributions to improve the Task Management Board are welcome. Please feel free to fork the repository, make changes, and submit pull requests.
 
+## Acknowledgments
+
+- Assisted by Amazon Q
+  
 ## License
 
 [MIT License](LICENSE.md)

@@ -50,6 +50,7 @@ This Task Management Board is a dynamic, interactive web application that allows
 2. Open the `index.html` file in a web browser
 
 No additional installation or setup is required as this is a client-side application.
+Alternatively, visit the live site at [turriettaa.github.io/Task-Board/](https://turriettaa.github.io/Task-Board).
 
 ## Future Enhancements
 

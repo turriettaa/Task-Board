@@ -1,16 +1,166 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-.swim-lanes {
-  min-height: 60vh;
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card-header {
+  display: block !important;
+  visibility: visible !important;
+  height: auto !important;
+  min-height: 50px;
+  background-color: #f8f9fa !important;
+}
+
+.card-title {
+  color: #333;
+  font-size: 1.2em;
+}
+
+.task-board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.lane {
+  min-height: 300px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+}
+
+.lane h2 {
+  text-align: center;
+  color: #495057;
+  margin-bottom: 15px;
 }
 
 .task-card {
-  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+  overflow: hidden;  /* Ensures child elements don't overflow */
+  display: block !important;/* Ensure the card is displayed as a block element */
+  visibility: visible !important;
 }
 
 .task-card:hover {
-  cursor: grab;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h3 {
+  margin-top: 0;
+  color: #495057;
+}
+
+.task-card p {
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.delete-task {
+  float: right;
+  color: #dc3545;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.delete-task:hover {
+  color: #c82333;
+}
+
+#create-task {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+.modal-content {
+  background-color: #f8f9fa;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.modal-footer {
+  background-color: #e9ecef;
+}
+
+#task-form label {
+  font-weight: bold;
+}
+
+.near-deadline {
+  border-left: 5px solid #ffc107;
+}
+
+.overdue {
+  border-left: 5px solid #dc3545;
+}
+
+.swim-lanes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.swim-lanes .lane {
+  flex: 1;
+  min-width: 250px;
+  margin: 0 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.swim-lanes .lane h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #495057;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .swim-lanes {
+    flex-direction: column;
+  }
+
+  .swim-lanes .lane {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .task-board {
+    flex-direction: column;
+  }
+
+  .lane {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

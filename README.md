@@ -3,6 +3,7 @@
 ## Description
 
 This Task Management Board is a dynamic, interactive web application that allows users to organize and track their tasks across different stages of completion. Built with HTML, CSS, and JavaScript (with jQuery), it provides a visual and intuitive interface for managing tasks.
+<img src="Screenshot 2024-09-13 183648.png" alt="Site Screenshot">
 
 ## Features
 
